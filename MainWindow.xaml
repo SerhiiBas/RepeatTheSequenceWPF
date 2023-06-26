@@ -1,0 +1,74 @@
+﻿<Window x:Class="RepeatTheSequence.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RepeatTheSequence"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="584.4" Width="1232.8" Background="#FF120101" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center">
+    <Window.Resources>
+        <ControlTemplate x:Key="roundButton" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid Margin="174,121,158.4,74.4" UseLayoutRounding="False" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid x:Name="buttomNet" UseLayoutRounding="False">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="180"/>
+            </Grid.ColumnDefinitions>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu2" Grid.Column="2" Grid.Row="0" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu3" Grid.Column="3" Grid.Row="0" Margin="15,10,15,1.2" Width="150" Height="60" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu4" Grid.Column="4" Grid.Row="0" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu5" Grid.Column="5" Grid.Row="0" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu6" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu7" Grid.Column="2" Grid.Row="1" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu8" Grid.Column="3" Grid.Row="1" Margin="15,10,15,1.2" Width="150" Height="60" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu9" Grid.Column="4" Grid.Row="1" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu10" Grid.Column="5" Grid.Row="1" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu11" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="15,10,15,1.2" Width="150" Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.505,0.485" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu12" Grid.Column="2" Grid.Row="2" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu13" Grid.Column="3" Grid.Row="2" Margin="15,10,15,1.2" Width="150" Height="60" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu14" Grid.Column="4" Grid.Row="2" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu15" Grid.Column="5" Grid.Row="2" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0.2,0,0.4" Grid.IsSharedSizeScope="True"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu16" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu17" Grid.Column="2" Grid.Row="3" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu18" Grid.Column="3" Grid.Row="3" Margin="15,10,15,1.2" Width="150" Height="60" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu19" Grid.Column="4" Grid.Row="3" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu20" Grid.Column="5" Grid.Row="3" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu21" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu22" Grid.Column="2" Grid.Row="4" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu23" Grid.Column="3" Grid.Row="4" Margin="15,10,15,1.2" Width="150" Height="60" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu24" Grid.Column="4" Grid.Row="4" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+            <local:ButtonVsBoolean Template="{StaticResource roundButton}" x:Name="bu25" Grid.Column="5" Grid.Row="4" Margin="15,10,15,1.2" Width="150" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" Padding="1,0.2,1,0.4"/>
+        </Grid>
+        <Grid Margin="415,-62,376,371" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="103">
+            <Label Content="Levl:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFE2FF04" x:Name="lbInfoLevl" FontSize="20"/>
+            <Label Content="1" HorizontalAlignment="Center" Margin="53,0,-0.4,0" VerticalAlignment="Center" Foreground="#FFFCEB00" FontSize="20" x:Name="lbScorLevl"/>
+        </Grid>
+    </Grid>
+</Window>
